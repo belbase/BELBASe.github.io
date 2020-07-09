@@ -6,7 +6,7 @@ $(document).ready(function(){
             console.log(response);
             $(".profile-img img").prop("src",response.avatar_url);
             $(".profile-name").html(response.name)
-            $(".profile-email").html(response.email)
+            
         },
         error:function(response){
             console.log(response);
@@ -16,6 +16,15 @@ $(document).ready(function(){
         url:"/assets/json/details.json",
         method:"GET",
         success:function(response){
+            console.log(response);
+            $(".profile-email").html(response.email)
+            $(".profle-designation").html(response.headline)
+            $(".profile-dob").html(response.dob),
+            $(".profile-phone").html(response.phone),
+
+            //profile-phone
+        },
+        error:function(response){
             console.log(response);
         }
     })
