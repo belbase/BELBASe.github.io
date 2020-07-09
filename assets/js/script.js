@@ -5,8 +5,7 @@ $(document).ready(function(){
         success:function(response){
             console.log(response);
             $(".profile-img img").prop("src",response.avatar_url);
-            $(".profile-name").html(response.name)
-            
+            $(".profile-name").html(response.name);
         },
         error:function(response){
             console.log(response);
@@ -17,10 +16,10 @@ $(document).ready(function(){
         method:"GET",
         success:function(response){
             console.log(response);
-            $(".profile-email").html(response.email)
-            $(".profle-designation").html(response.headline)
-            $(".profile-dob").html(response.dob),
-            $(".profile-phone").html(response.phone),
+            $(".profile-email").html(response.email);
+            $(".profle-designation").html(response.headline);
+            $(".profile-dob").html(response.dob);
+            $(".profile-phone").html(response.phone);
 
             //profile-phone
         },
