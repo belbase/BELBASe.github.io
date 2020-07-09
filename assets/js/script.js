@@ -20,7 +20,6 @@ $(document).ready(function(){
             $(".profle-designation").html(response.headline);
             $(".profile-dob").html(response.dob);
             $(".profile-phone").html(response.phone);
-
             //profile-phone
         },
         error:function(response){
