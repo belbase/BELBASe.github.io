@@ -5,22 +5,19 @@ $(document).ready(function(){
         success:function(response){
             console.log(response);
             $(".profile-img img").prop("src",response.avatar_url);
-
+            $(".profile-name").html(response.name)
+            $(".profile-email").html(response.email)
         },
         error:function(response){
             console.log(response);
         }
     })
     $.ajax({
-        url:"https://api.linkedin.com/v2/people/belbase",
+        url:"/assets/json/details.json",
         method:"GET",
         success:function(response){
             console.log(response);
-            $(".profile-img img").prop("src",response.avatar_url);
-
-        },
-        error:function(response){
-            console.log(response);
+            
         }
     })
 });

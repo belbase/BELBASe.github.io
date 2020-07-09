@@ -1,0 +1,41 @@
+{
+    "email":"deepak.belbase@gmail.com",
+    "designation":"Software Developer",
+    "headline":"Software Developer at DishTV",
+    "emplyoment-history":[
+        {
+            "company":"DishTV",
+            "post":"Software Developer",
+            "duration":"Nov-2015",
+            "description":"Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
+            quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
+            eu mollis tellus. Sed finibus aliquam neque sit amet sodales. "
+        },{
+            "company":"DishTV",
+            "post":"Software Developer",
+            "duration":"Dec -2020",
+            "description":"Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
+            quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
+            eu mollis tellus. Sed finibus aliquam neque sit amet sodales. "
+        },
+        {
+            "company":"Parangat Technologies",
+            "post":"Junior Software Developer",
+            "duration":"Mar- 2020",
+            "description":"Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
+            quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
+            eu mollis tellus. Sed finibus aliquam neque sit amet sodales."
+        },{
+            "company":"Transisco Labs",
+            "post":"Software Developer",
+            "duration":"Mar - 2018",
+            "description":"Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, 
+            quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu, 
+            eu mollis tellus. Sed finibus aliquam neque sit amet sodales."
+        }
+    ]
+}
