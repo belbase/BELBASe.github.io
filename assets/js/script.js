@@ -17,7 +17,6 @@ $(document).ready(function(){
         method:"GET",
         success:function(response){
             console.log(response);
-            
         }
     })
 });
