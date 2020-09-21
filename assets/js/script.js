@@ -1,64 +1,111 @@
-$(document).ready(function(){
-    page.init();
-});
-var page = {
-  init:function(){
-    $(document).ajaxStart(function() {
-      page.loader();
-    });
-    $(document).ajaxComplete(function() {
-      page.loader('hide');
-    });
-    $(document).ajaxError(function(){
-      alert("An error occurred!");
-    });
-    page.fetchGitHubInfo();
-    page.fetchPersonalInfo();
-  },
-  loader:function(option){
-    let loader = $(".loader-overlay");
-    switch (option) {
-      case "show":
-        loader.show();
-        break;
-      case "hide":
-      // debugger;
-        loader.hide();
-        break;
-      default:
-        loader.show();
-    }
-  },
-  fetchGitHubInfo:function(){
-    $.ajax({
-        url:"https://api.github.com/users/supdpk",
-        method:"GET",
-        success:function(response){
-            console.log(response);
-            $(".profile-img img").prop("src",response.avatar_url);
-            $(".profile-name").html(response.name);
-        },
-        error:function(response){
-            console.log(response);
-        }
-    })
-  },
-  fetchPersonalInfo:function(){
-    $.ajax({
-        url:"/assets/json/details.json",
-        method:"GET",
-        success:function(response){
-            console.log(response);
-            $(".profile-email").html(response.email);
-            $(".profle-designation").html(response.headline);
-            $(".profile-dob").html(response.dob);
-            $(".profile-phone").html(response.phone);
-            //profile-phone
-        },
-        error:function(response){
-            console.log(response);
-        }
-    })
-  }
+var Typer={
+	text: null,
+	accessCountimer:null,
+	index:0,
+	speed:2,
+	file:"",
+	accessCount:0,
+	deniedCount:0,
+	init: function(){
+		accessCountimer=setInterval(function(){Typer.updLstChr();},500);
+		$.get(Typer.file,function(data){
+			Typer.text=data;
+			Typer.text = Typer.text.slice(0, Typer.text.length-1);
+		});
+	},
+
+	content:function(){
+		return $("#console").html();
+	},
+
+	write:function(str){
+		$("#console").append(str);
+		return false;
+	},
+
+	addText:function(key){
+
+		if(key.keyCode==18){
+			Typer.accessCount++;
+
+			if(Typer.accessCount>=3){
+				Typer.makeAccess();
+			}
+		}
+
+    		else if(key.keyCode==20){
+			Typer.deniedCount++;
+
+			if(Typer.deniedCount>=3){
+				Typer.makeDenied();
+			}
+		}
+
+    		else if(key.keyCode==27){
+			Typer.hidepop();
+		}
+
+    		else if(Typer.text){
+			var cont=Typer.content();
+			if(cont.substring(cont.length-1,cont.length)=="|")
+				$("#console").html($("#console").html().substring(0,cont.length-1));
+			if(key.keyCode!=8){
+				Typer.index+=Typer.speed;
+			}
+      		else {
+			if(Typer.index>0)
+				Typer.index-=Typer.speed;
+			}
+			var text=Typer.text.substring(0,Typer.index)
+			var rtn= new RegExp("\n", "g");
+
+			$("#console").html(text.replace(rtn,"<br/>"));
+			window.scrollBy(0,50);
+		}
+
+		if (key.preventDefault && key.keyCode != 122) {
+			key.preventDefault()
+		};
+
+		if(key.keyCode != 122){ // otherway prevent keys default behavior
+			key.returnValue = false;
+		}
+	},
+
+	updLstChr:function(){
+		var cont=this.content();
+
+		if(cont.substring(cont.length-1,cont.length)=="|")
+			$("#console").html($("#console").html().substring(0,cont.length-1));
+
+		else
+			this.write("|"); // else write it
+	}
 }
-//https://api.linkedin.com/v2/people/(id:{person ID})
+
+function replaceUrls(text) {
+	var http = text.indexOf("http://");
+	var space = text.indexOf(".me ", http);
+
+	if (space != -1) {
+		var url = text.slice(http, space-1);
+		return text.replace(url, "<a href=\""  + url + "\">" + url + "</a>");
+	}
+
+	else {
+		return text
+	}
+}
+
+Typer.speed=3;
+Typer.file="deepak-belbase.txt"; // add your own name here
+Typer.init();
+
+var timer = setInterval("t();", 30);
+function t() {
+	Typer.addText({"keyCode": 123748});
+
+	if (Typer.index > Typer.text.length) {
+		clearInterval(timer);
+	}
+}
