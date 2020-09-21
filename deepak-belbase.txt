@@ -6,7 +6,5 @@ My favorite code quote, "<span id="a">The best thing about the nightmares is tha
 <p> A very determined Software Developer with 2+ years experience in Laravel, eloquent ORM, jQuery, React, Angular, .Net MVC 5, .Net Core, Oracle, MySQL, SQL Server, Git versioning System, TFS and Apache Web Server.</p><!-- delaydelaydelaydelaydelaydelaydelay -->
 <p> You can download my CV <a href="https://docs.google.com/document/d/16UToyRpW-2P52TTSRAXpw8oR37_9HjSfiUGhYd8uP-w/export?format=pdf">Here</a>.</p><!-- moredelaymoredelaymoredelaymoredelaymoredelaymoredelay-->
 <p> You can access to my other professional profiles on Internet, here: <br> <a href="https://in.linkedin.com/in/belbase">LinkedIn</a> <br> <a href="https://facebook.com/belbases">Facebook</a> and <br> <a href="https://instagram.com/supdpk">Instagram</a>.</p>
-
 <!-- slightdelayhere-->Feel free to send me an <!-- longlonglongcomment --> <a href="mailto:deepak.belbase4@gmail.com">email</a>.
-
 <p>copyright &copy; 2020 - Deepak Belbase</p>
