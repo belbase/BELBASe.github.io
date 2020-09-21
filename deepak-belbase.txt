@@ -1,13 +1,12 @@
-<span id="a">alpha@belbase</span>:<span id="b">~</span><span id="c">$</span> cd BELBASE/<!-- laglaglaglaglaglag -->About_Us<br/>
-<span id="a">alpha@belbase</span>:<span id="b">~</span><span id="c">$</span> cat <!-- laglaglaglaglaglaglaglaglag -->deepak-belbase.txt<br/><br/>
-My favorite code quote, "<span id="k">The best thing about the nightmares is that they make us face the things we always run from</span>". <!-- sjkfhskjf -->
-<br/>
-Hey There! This is <span id="a">Deepak Belbase</span>.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>You can see that, this is how your portfolio would look like.</p>
-<p>I'm a Software Developer @ DishTV India Limited.</p> <!-- bitlagbitlagbitlagbitlagbitlagbitlag -->
-<p> You can also tell what you've worked and known and what skills you have, you can also give link to your professional portfolio here<a href="link"> portfolio</a>.</p><!-- delaydelaydelaydelaydelaydelaydelay -->
-<p>Tell more about yourself. <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.</p><!-- moredelaymoredelaymoredelaymoredelaymoredelaymoredelay-->
-<p> You can give links to other professional profiles you have on Internet, here: <br> <a href="link1">LinkedIn</a> <br> <a href="link2">Facebook</a> and <br> <a href="link3">Instagram</a>.</p>
+<span id="a">alpha@belbase</span>:<span id="b">~</span><span id="c">$</span> cd belbase/<!-- laglaglaglaglaglag -->about-me<br/>
+<span id="a">alpha@belbase</span>:<span id="b">~/belbase/about-me</span><span id="c">$</span> cat <!-- laglaglaglaglaglaglaglaglag -->deepak-belbase.txt<br/><br/>
+My favorite code quote, "<span id="a">The best thing about the nightmares is that they make us face the things we always run from</span>". <!-- sjkfhskjf -->
+<p>Hey There! This is <span id="a">Deepak Belbase</span>.<!-- laglaglaglaglaglaglaglaglaglaglaglag --></p>
+<p>I'm a Software Developer at <a href="https://dishd2h.com">Dish TV India Limited</a>.</p> <!-- bitlagbitlagbitlagbitlagbitlagbitlag -->
+<p> A very determined Software Developer with 2+ years experience in Laravel, eloquent ORM, jQuery, React, Angular, .Net MVC 5, .Net Core, Oracle, MySQL, SQL Server, Git versioning System, TFS and Apache Web Server.</p><!-- delaydelaydelaydelaydelaydelaydelay -->
+<p> You can download my CV <a href="https://docs.google.com/document/d/16UToyRpW-2P52TTSRAXpw8oR37_9HjSfiUGhYd8uP-w/export?format=pdf">Here</a>.</p><!-- moredelaymoredelaymoredelaymoredelaymoredelaymoredelay-->
+<p> You can access to my other professional profiles on Internet, here: <br> <a href="https://in.linkedin.com/in/belbase">LinkedIn</a> <br> <a href="https://facebook.com/belbases">Facebook</a> and <br> <a href="https://instagram.com/supdpk">Instagram</a>.</p>
 
-You can also give your email ID for contacting you<!-- slightdelayhere-->, feel free to send me an email at<!-- longlonglongcomment --> <a href="mailto:deepak.belbase4@gmail.com">Email</a>.
+<!-- slightdelayhere-->Feel free to send me an <!-- longlonglongcomment --> <a href="mailto:deepak.belbase4@gmail.com">email</a>.
 
 <p>Cheers!</p>
